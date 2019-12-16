@@ -5,8 +5,8 @@ provider "github" {
 
 
 resource "github_repository" "repo_in_organization" {
-  name        = "example"
-  description = "My awesome codebase"
+  name        = "Organization_repo"
+  description = "This is a test"
 
   private = false
 }
