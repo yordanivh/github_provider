@@ -32,28 +32,12 @@ Using this repo's code will help with the understanding of how the github provid
  
  * Create a token with which you will be able to autheticate. This can be done with Settings>Developer Settings> Personal Access Token.
  
- * For security reasons variable values are not shown in this repo. You can add them as shown in the example below.
-Add this information to variables.tf file.
-
- ```
- variable "github_token" {
-  type    = string
-  default = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-}
-
-variable "github_organization" {
-  type    = string
-  default = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-}
- ```
-* Alternatively you can use *.tfvars file (ex. terraform.tfvars). In that file you can specify the variable value directly.
- ```
- github_token="xxxxxxxxxxxxxxx"
- github_organization="xxxxxxxxxxxxx"
- ```
-  But keep the variables.tf file without the default values.
- 
- > Remember! Never commit your *.tfvars file into VCS(version control system) since it will be visible publicly.You can avoid this by using the .gitignore filtering in git. For more information click [here](https://help.github.com/en/github/using-git/ignoring-files)!
+ * For security reasons variable values are not shown in this repo. You can add them in a terraform.tfvars file as shown below
+  ```
+  github_token="xxxxxxxxxxxxxxx"
+  github_organization="xxxxxxxxxxxxx"
+  ```
+ > Remember! Never commit your *.tfvars file into VCS(version control system) since it will be visible publicly.You can avoid this by using the .gitignore filtering in git. For more information on how to do that click [here](https://help.github.com/en/github/using-git/ignoring-files)!
 
  * Initialize the project ( Terraform will download provider plugins)
  
