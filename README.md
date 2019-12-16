@@ -46,8 +46,15 @@ variable "github_organization" {
   default = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 }
  ```
-
+* Alternatively you can use *.tfvars file (ex. terraform.tfvars). In that file you can specify the variable value directly.
+ ```
+ github_token="xxxxxxxxxxxxxxx"
+ github_organization="xxxxxxxxxxxxx"
+ ```
+  But keep the variables.tf file without the default values.
  
+ > Remember! Never commit your *.tfvars file into VCS(version control system) since it will be visible publicly.You can avoid this by using the .gitignore filtering in git. For more information click [here](https://help.github.com/en/github/using-git/ignoring-files)!
+
  * Initialize the project ( Terraform will download provider plugins)
  
  ```
