@@ -11,10 +11,6 @@ Using this repo's code will help with the understanding of how the github provid
 
 # How to use this repo
 
-This repo will help you get an understanding of how creating two resources in different regions can be acomplished
-
-# How to use this repo
-
  * Install Terraform
  ```
  https://www.terraform.io/downloads.html
@@ -36,8 +32,9 @@ This repo will help you get an understanding of how creating two resources in di
  
  * Create a token with which you will be able to autheticate. This can be done with Settings>Developer Settings> Personal Access Token.
  
- * For security reasons variables.tf file is not present in the repo but here is how this file shoulD look like.
- 
+ * For security reasons variable values are not shown in this repo. You can add them as shown in the example below.
+Add this information to variables.tf file.
+
  ```
  variable "github_token" {
   type    = string
@@ -49,7 +46,7 @@ variable "github_organization" {
   default = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 }
  ```
- Create a variables.tf file and these contents to it and substitute the X with your information.
+
  
  * Initialize the project ( Terraform will download provider plugins)
  
